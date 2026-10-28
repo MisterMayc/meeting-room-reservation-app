@@ -5,7 +5,9 @@ I have written only a few lines of code with my own hands, but I actively partic
 
 https://chatgpt.com/s/cx_6ae2524be0048191974cac59797e23c2
 
-A daily booking calendar built with React, TypeScript, Vite, and CSS. MSW provides a mock http api backed by localStorage.
+The deployed app link: https://meetingroomsapp.netlify.app/
+
+## A daily booking calendar built with React, TypeScript, Vite, and CSS. MSW provides a mock http api backed by localStorage.
 
 - **Live demo:** add the Netlify URL
 - **AI conversation:** add the shared chat URL
