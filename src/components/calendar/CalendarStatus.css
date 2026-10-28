@@ -1,0 +1,19 @@
+.calendar-status {
+  min-height: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  color: #75678a;
+}
+.calendar-status h3 {
+  font-size: 1.15rem;
+}
+.calendar-status p {
+  max-width: 34rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}

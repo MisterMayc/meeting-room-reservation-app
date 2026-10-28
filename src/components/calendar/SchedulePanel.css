@@ -1,0 +1,46 @@
+.schedule-panel {
+  --panel-padding: clamp(1rem, 1.8vw, 2rem);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 18px #25344a03;
+}
+.schedule-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  padding: 1.2rem var(--panel-padding);
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.schedule-footer > span {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.schedule-footer svg {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.schedule-footer i {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #589274;
+}
+.schedule-panel__empty {
+  padding: 1rem var(--panel-padding);
+  font-size: 0.85rem;
+  color: #736185;
+  background: #faf8fe;
+}
+@media (max-width: 700px) {
+  .schedule-footer {
+    font-size: 0.7rem;
+    padding-block: 1rem;
+  }
+}

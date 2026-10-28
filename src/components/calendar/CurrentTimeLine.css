@@ -1,0 +1,56 @@
+.now-line {
+  grid-column: 2;
+  grid-row: 2 / 6;
+  position: relative;
+  width: 2px;
+  left: var(--now);
+  background: #db414f;
+  pointer-events: none;
+  z-index: 3;
+  align-self: stretch;
+  justify-self: start;
+}
+.now-line::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #db414f;
+}
+.now-line > span {
+  position: absolute;
+  left: 0;
+  top: -1.5rem;
+  transform: translateX(-50%);
+  border-radius: 0.3rem;
+  background: #db414f;
+  color: white;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .now-line {
+    grid-column: 2 / 6;
+    grid-row: 2;
+    left: 0;
+    top: var(--now);
+    height: 2px;
+    width: auto;
+    align-self: start;
+    justify-self: stretch;
+  }
+  .now-line::before {
+    top: -3px;
+  }
+  .now-line > span {
+    left: -2px;
+    top: 0;
+    transform: translate(-100%, -50%);
+    font-size: 0.6rem;
+    padding: 0.2rem;
+  }
+}

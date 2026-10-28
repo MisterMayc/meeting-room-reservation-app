@@ -1,0 +1,116 @@
+.booking {
+  position: absolute;
+  left: calc(var(--start) + 3px);
+  width: calc(var(--length) - 6px);
+  top: 0.85rem;
+  bottom: 0.85rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-left: 3px solid var(--room-color);
+  border-radius: 0.45rem;
+  padding: 0.8rem 0.6rem;
+  background: var(--room-tint);
+  color: color-mix(in srgb, var(--room-color) 80%, #202534);
+  text-align: left;
+}
+.booking:hover {
+  box-shadow: 0 3px 9px #151b3622;
+  filter: brightness(0.98);
+  transform: translateY(-1px);
+}
+.booking__time {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.booking strong {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: 0.65rem;
+  font-weight: 600;
+}
+.booking__duration {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+.booking__duration svg {
+  width: 0.8rem;
+  height: 0.8rem;
+  flex-shrink: 0;
+}
+.booking__duration i {
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: var(--room-color);
+  margin-left: auto;
+}
+.booking-past {
+  background: #f0f2f5;
+  color: #667182;
+  border-left-color: #aeb7c4;
+}
+.booking-ongoing {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--room-color) 25%, transparent);
+}
+@media (min-width: 701px) and (max-width: 1500px) {
+  .booking-compact {
+    padding-inline: 0.4rem;
+  }
+  .booking-compact strong,
+  .booking-compact .booking__duration {
+    display: none;
+  }
+  .booking__time {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 700px) {
+  .booking {
+    top: calc(var(--start) + 3px);
+    height: calc(var(--length) - 6px);
+    left: 3px;
+    right: 3px;
+    width: auto;
+    bottom: auto;
+    padding: 0.6rem 0.35rem;
+    border-left-width: 2px;
+    border-radius: 0.3rem;
+  }
+  .booking__time {
+    display: block;
+    font-size: 0.7rem;
+  }
+  .booking__time > span {
+    display: block;
+  }
+  .booking strong {
+    font-size: 0.75rem;
+    margin-top: 0.6rem;
+  }
+  .booking__duration {
+    font-size: 0.65rem;
+  }
+  .booking__duration svg,
+  .booking-compact strong,
+  .booking-compact .booking__duration {
+    display: none;
+  }
+}

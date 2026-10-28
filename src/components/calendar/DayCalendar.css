@@ -1,0 +1,42 @@
+.calendar-scroll {
+  padding-right: var(--panel-padding);
+  overflow-x: auto;
+}
+.calendar {
+  display: grid;
+  position: relative;
+  grid-template-columns: clamp(11rem, 14vw, 15rem) minmax(0, 1fr);
+  grid-template-rows: 2.5rem repeat(4, clamp(9rem, 12vh, 12rem));
+}
+.calendar-corner {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding-left: var(--panel-padding);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+@media (max-width: 700px) {
+  .calendar-scroll {
+    padding: 0 0.5rem 0 0.25rem;
+  }
+  .calendar {
+    grid-template-columns: 2.8rem repeat(4, minmax(0, 1fr));
+    grid-template-rows: 6.5rem 81rem;
+  }
+  .calendar-corner {
+    border: 0;
+    padding: 0;
+    font-size: 0;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1150px) {
+  .calendar {
+    min-width: 68rem;
+  }
+}

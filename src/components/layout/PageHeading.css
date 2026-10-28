@@ -1,0 +1,42 @@
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.7rem;
+}
+.page-heading__intro h1 {
+  font-size: clamp(1.9rem, 2.6vw, 3rem);
+  letter-spacing: -0.055em;
+  font-weight: 750;
+  line-height: 1.2;
+}
+.page-heading__intro p {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-top: 0.6rem;
+}
+@media (max-width: 700px) {
+  .page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .page-heading__intro p {
+    font-size: 0.9rem;
+  }
+}
+
+.page-heading__actions {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.7rem;
+}
+@media (max-width: 700px) {
+  .page-heading__actions {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,38 @@
+.reservation-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  border-top: 1px solid var(--border);
+  margin-top: 1.5rem;
+  padding-top: 1.2rem;
+}
+
+.reservation-actions__delete {
+  margin-right: auto;
+  color: #ab4650;
+  text-decoration: none;
+}
+
+.reservation-actions--confirm {
+  justify-content: flex-start;
+}
+
+.reservation-actions--confirm p {
+  flex-basis: 100%;
+  font-size: 0.85rem;
+  color: #994148;
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 400px) {
+  .reservation-actions {
+    gap: 0.3rem;
+  }
+  .reservation-actions .button {
+    padding-inline: 0.6rem;
+    font-size: 0.8rem;
+  }
+}

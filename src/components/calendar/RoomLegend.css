@@ -1,0 +1,42 @@
+.room-legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 var(--panel-padding) 1.5rem;
+  color: #697487;
+  font-size: 0.8rem;
+}
+.room-legend > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.room-legend span,
+.room-legend p {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.room-legend i {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+.room-legend p {
+  font-size: 0.75rem;
+}
+@media (max-width: 900px) {
+  .room-legend p {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .room-legend {
+    font-size: 0.75rem;
+    padding-bottom: 1rem;
+  }
+  .room-legend > div {
+    gap: 0.75rem;
+  }
+}

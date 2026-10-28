@@ -1,0 +1,6 @@
+.demo-note {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: right;
+}
