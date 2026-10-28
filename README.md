@@ -1,5 +1,10 @@
 # Hakob Torosyan - Test Assessment (T3 Frontend Engineer)
 
+This task was done using chatgpt, codex, as in the test assessment I needed to also provide the link to AI chat :)
+I have written only a few lines of code with my own hands, but I actively participated in making business logic, testing the layout, reading the task requirements and thinking ways to achieve them. No other AI chat was used, (only used one to remind me how to deploy to netlify :)), I will leave the link to AI chat below, this was the only chat I used while creating this application.
+
+https://chatgpt.com/s/cx_6ae2524be0048191974cac59797e23c2
+
 A daily booking calendar built with React, TypeScript, Vite, and CSS. MSW provides a mock http api backed by localStorage.
 
 - **Live demo:** add the Netlify URL
@@ -47,9 +52,6 @@ I chose to create an optional case for simulating the conflict, so you can repro
 - `src/mocks` — MSW handlers and conflict simulation.
 - `src/data` — localStorage persistence and initial demo data.
 - `src/hooks` and `src/components` — UI state and components.
-
-This task was done using chatgpt, codex, as in the test assessment I needed to also provide the link to AI chat :)
-I have written only a few lines of code with my own hands, but I actively participated in making business logic, testing the layout, reading the task requirements and thinking ways to achieve them. No other AI chat was used, (only used one to remind me how to deploy to netlify :)), I will leave the link to AI chat below, this was the only chat I used while creating this application.
 
 Thanks for reviewing my assessment, I hope to pass to the next step !
 
